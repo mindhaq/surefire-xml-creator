@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="1" failures="0" name="com.mindhaq.surefirecreator.Example" time="0.004" errors="0" skipped="0">
+    <testcase classname="com.mindhaq.surefirecreator.Example" name="bar1" time="0.004"/>
+    <testcase classname="com.mindhaq.surefirecreator.Example" name="bar2" time="0.007"/>
+    <testcase classname="com.mindhaq.surefirecreator.Example" name="bar3" time="0.010"/>
+    <testcase classname="com.mindhaq.surefirecreator.Example" name="err1" time="0.012">
+        <error message="you failed!" type="ExampleError">
+            there you have it.
+        </error>
+    </testcase>
+</testsuite>
