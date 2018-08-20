@@ -1,3 +1,4 @@
 # surefire-xml-creator
 
-Example on how to create XML files which would be readable by the surefire plugin to generate a HTML report.
+Simple experiment on how to create XML files which would be readable by the maven surefire plugin to generate an HTML report, without having to use a te
+sting framework.

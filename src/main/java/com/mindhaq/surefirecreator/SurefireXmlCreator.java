@@ -25,12 +25,12 @@ public class SurefireXmlCreator {
         var output = args[0] + "/surefire-reports";
 
         print("Creating testsuite");
-        TestSuite testSuite = exampleTestSuite(1_000_000);
-        TestSuiteXMLWriter testSuiteXMLWriter = new TestSuiteXMLWriter(Paths.get(output, "TEST-com.mindhaq.surefirecreator.BigExample.xml"));
+        var testSuite = exampleTestSuite(1_000);
+        var testSuiteXMLWriter = new TestSuiteXMLWriter(Paths.get(output, "TEST-com.mindhaq.surefirecreator.BigExample.xml"));
         testSuiteXMLWriter.write(testSuite);
         print("Finished.");
 
-        Files.copy(Paths.get("/Users/rue/code/public/surefire-xml-creator/src/main/resources/com/mindhaq/surefirecreator/TEST-com.mindhaq.surefirecreator.Example.xml"), Paths.get(output, "TEST-com.mindhaq.surefirecreator.Example.xml"), REPLACE_EXISTING);
+        Files.copy(Paths.get("src/main/resources/com/mindhaq/surefirecreator/TEST-com.mindhaq.surefirecreator.Example.xml"), Paths.get(output, "TEST-com.mindhaq.surefirecreator.Example.xml"), REPLACE_EXISTING);
     }
 
     public static TestSuite exampleTestSuite(int numberOfTestCases) {

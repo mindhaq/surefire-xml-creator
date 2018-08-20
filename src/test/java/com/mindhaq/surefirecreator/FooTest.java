@@ -11,7 +11,7 @@ public class FooTest {
 
     @Test
     public void err() {
-        throw new RuntimeException("badöng!");
+        throw new RuntimeException("failed!");
     }
 
 }
