@@ -25,7 +25,7 @@ public class SurefireXmlCreator {
         var output = args[0] + "/surefire-reports";
 
         print("Creating testsuite");
-        var testSuite = exampleTestSuite(1_000);
+        var testSuite = exampleTestSuite(1_000_000);
         var testSuiteXMLWriter = new TestSuiteXMLWriter(Paths.get(output, "TEST-com.mindhaq.surefirecreator.BigExample.xml"));
         testSuiteXMLWriter.write(testSuite);
         print("Finished.");

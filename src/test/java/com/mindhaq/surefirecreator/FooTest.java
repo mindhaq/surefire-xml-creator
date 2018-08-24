@@ -1,5 +1,6 @@
 package com.mindhaq.surefirecreator;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 public class FooTest {
@@ -12,6 +13,11 @@ public class FooTest {
     @Test
     public void err() {
         throw new RuntimeException("failed!");
+    }
+
+    @Test
+    public void fail() {
+        Assert.fail("This test failed.");
     }
 
 }
